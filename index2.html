@@ -67,44 +67,44 @@
 					<div class='head'>部门负责人签字</div>
 					
 					<div class='item one1'></div>
-					<div class='item' id='post'>辅警</div>
+					<div class='item' id='post'></div>
 					<div class='item one1 content'></div>
 					<div class='item one1 timeLeng'></div>
 					<div class = 'item sign'></div>
 					
 					<div class='item one2'></div>
-					<div class='item' id='post'>辅警</div>
+					<div class='item' id='post'></div>
 					<div class='item one2 content'></div>
 					<div class='item one2 timeLeng'></div>
 					<div class = 'item sign'></div>
 					
 					
 					<div class='item one3'></div>
-					<div class='item' id='post'>辅警</div>
+					<div class='item' id='post'></div>
 					<div class='item one3 content'></div>
 					<div class='item one3 timeLeng'></div>
 					<div class = 'item sign'></div>
 					
 					<div class='item one4'></div>
-					<div class='item' id='post'>辅警</div>
+					<div class='item' id='post'></div>
 					<div class='item one4 content'></div>
 					<div class='item one4 timeLeng'></div>
 					<div class = 'item sign'></div>
 					
 					<div class='item one5'></div>
-					<div class='item' id='post'>辅警</div>
+					<div class='item' id='post'></div>
 					<div class='item one5 content'></div>
 					<div class='item one5 timeLeng'></div>
 					<div class = 'item sign'></div>
 					
 					<div class='item one6'></div>
-					<div class='item' id='post'>辅警</div>
+					<div class='item' id='post'></div>
 					<div class='item one6 content'></div>
 					<div class='item one6 timeLeng'></div>
 					<div class = 'item sign'></div>
 					
 					<div class='item one7'></div>
-					<div class='item' id='post'>辅警</div>
+					<div class='item' id='post'></div>
 					<div class='item one7 content'></div>
 					<div class='item one7 timeLeng'></div>
 					<div class = 'item sign'></div>
@@ -162,7 +162,7 @@
 					dateArr.forEach((t)=>{
 						if(t.lengthTime < 0){
 							if(Math.abs(t.lengthTime) % 3 == 0){
-								t.homeWorkLength = "上午：08时00分\n至次日08时00\n24小时值班。";
+								t.homeWorkLength = "中午：12:00\n至次日08:00";
 								t.homeWorkCentent = "1、盯守预警平台管控七类重点人；\n2、qb线索收集分析研判。\n3、报送各类日常材料";
 							}else if(Math.abs(t.lengthTime) % 3 == 1){
 								t.homeWorkLength = "0小时"
@@ -172,20 +172,20 @@
 									t.homeWorkLength = "0小时"
 									t.homeWorkCentent = "周六周日休息";	
 								}else{
-									t.homeWorkLength = "上午：08时00分-12时：00分\n下午：14时30分-17时：30分7小时值班"
+									t.homeWorkLength = "上午：08:00-12:00\n下午：14:30-17:30"
 									t.homeWorkCentent = "1、盯守预警平台管控七类重点人；\n2、qb线索收集分析研判。\n3、报送各类日常材料";
 								}
 							} 
 						}else{
 							if(t.lengthTime % 3 == 0){
-								t.homeWorkLength = "上午：08时00分\n至次日08时00分\n24小时值班。";
+								t.homeWorkLength = "中午：12:00分至次日08:00";
 								t.homeWorkCentent = "1、盯守预警平台管控七类重点人；\n2、qb线索收集分析研判。\n3、报送各类日常材料";
 							}else if(t.lengthTime % 3 == 1){
 								if(t['星期'] == 0 || t['星期'] == 6){
 									t.homeWorkLength = "0小时"
 									t.homeWorkCentent = "周六周日休息";	
 								}else{
-									t.homeWorkLength = "上午：08时00分-12时：00分\n下午：14时30分-17时：30分\n7小时值班"
+									t.homeWorkLength = "上午：08:00-12:00\n下午：14:30-17:30"
 									t.homeWorkCentent = "1、盯守预警平台管控七类重点人；\n2、qb线索收集分析研判。\n3、报送各类日常材料";
 								}
 							}else{
